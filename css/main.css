@@ -138,6 +138,11 @@ blockquote footer {
     align-items: center;
 }
 
+.img{
+  width: 300px;
+  height: auto;
+}
+
 .select-img {
   display: block;
   float: left;
