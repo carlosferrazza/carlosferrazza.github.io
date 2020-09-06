@@ -173,11 +173,6 @@ blockquote footer {
   height: auto;
 }
 
-@media only screen and (max-width: 800px) {
-  .select-image {
-    max-width: 60%;
-  }
-}
 
 ol li:nth-child(2n+0) {
     list-style: none;
@@ -483,9 +478,6 @@ dd {
   .container {
     max-width: 730px;
   }
-  .select-image {
-    max-width: 100%;
-  }
 }
 
 /* Responsive: Portrait tablets and up */
@@ -495,8 +487,13 @@ dd {
   .container {
     max-width: 900px;
   }
+}
+
+
+@media only screen and (max-width: 767px) {
   .select-image {
-    max-width: 100%;
+    max-width: 60% !important;
+    border-radius: 50%;
   }
 }
 
