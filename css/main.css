@@ -132,6 +132,15 @@ blockquote footer {
   padding-bottom: 2px;
 }
 
+/* Select publications, index.html page ----------------------------------------------- */
+img {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
 /* Contact info area, index.html page ------------------------------------------------- */
 #title {
   color: #20364c;
