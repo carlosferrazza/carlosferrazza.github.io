@@ -133,7 +133,12 @@ blockquote footer {
 }
 
 /* Select publications, index.html page ----------------------------------------------- */
-img {
+.select-container {
+    display: flex;
+    align-items: center;
+}
+
+.select-img {
   display: block;
   float: left;
   margin-right: 10px;
