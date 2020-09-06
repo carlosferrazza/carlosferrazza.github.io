@@ -109,13 +109,13 @@ blockquote footer {
 }
 
 .publications {
-  list-style-type: none;
+  list-style-type: initial;
   padding-left: 2.5rem;
 }
 
 .publications li {
   margin-left: 2rem;
-  text-indent: -2.5rem;
+  text-indent: 0rem;
   ;
 }
 
@@ -350,6 +350,7 @@ nav {
 
 #link-to-docs:hover,
 #link-to-docs:active,
+#link-to-docs,
 #link-to-docs:visited,
 #link-to-docs:focus {
   border: 1px solid #1585cf !important;
