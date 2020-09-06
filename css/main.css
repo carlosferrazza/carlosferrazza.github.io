@@ -133,22 +133,54 @@ blockquote footer {
 }
 
 /* Select publications, index.html page ----------------------------------------------- */
+.select-button:link {
+  background-color: #000;
+  cursor: pointer;
+  color: inherit;
+}
+.select-button:visited {
+  background-color: #000;
+  cursor: pointer;
+}
+.select-button:hover {
+  background-color: #B5B5B5;
+  cursor: pointer;
+}
+.select-button:active {
+  background-color: #000;
+  cursor: pointer;
+}
+
 .select-container {
-    display: flex;
-    align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.select-container:link {
+  color: inherit;
 }
 
 .img{
-  width: 300px;
+  max-width: 250px;
   height: auto;
+  border-radius: 50%;
 }
 
 .select-img {
-  display: block;
-  float: left;
-  margin-right: 10px;
-  width: 100px;
   height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .select-image {
+    max-width: 60%;
+  }
+}
+
+ol li:nth-child(2n+0) {
+    list-style: none;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
@@ -451,6 +483,9 @@ dd {
   .container {
     max-width: 730px;
   }
+  .select-image {
+    max-width: 100%;
+  }
 }
 
 /* Responsive: Portrait tablets and up */
@@ -459,6 +494,9 @@ dd {
   /* Remove the padding we set earlier */
   .container {
     max-width: 900px;
+  }
+  .select-image {
+    max-width: 100%;
   }
 }
 
