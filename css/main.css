@@ -165,17 +165,22 @@ blockquote footer {
 
 .img{
   max-width: 250px;
-  height: auto;
+  width:100%;
   border-radius: 50%;
 }
 
 .select-img {
-  height: auto;
+  max-height: 300px;
 }
 
 
 ol li:nth-child(2n+0) {
     list-style: none;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */
@@ -475,26 +480,18 @@ dd {
 
 /* Narrow the viewport ----------------------------------------------- */
 /* Customize container */
-@media only screen and (min-width: 767px) {
-  .container {
-    max-width: 730px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media only screen and (min-width: 768px) {
-
-  /* Remove the padding we set earlier */
+@media only screen and (min-width: 576px) {
   .container {
     max-width: 900px;
   }
 }
 
+/* Responsive: Portrait tablets and up */
+@media only screen and (min-width: 576px) {
 
-@media only screen and (max-width: 767px) {
-  .select-image {
-    max-width: 60% !important;
-    border-radius: 50%;
+  /* Remove the padding we set earlier */
+  .container {
+    width: auto;
   }
 }
 
