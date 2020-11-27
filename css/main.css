@@ -217,7 +217,7 @@ nav {
 .navbar-inverse .navbar-nav>li>a:focus {
   background: white !important;
   border-radius: 1px;
-  color: #e3f2fd !important;
+  color: #3887E7 !important;
 }
 
 .navbar-default .navbar-nav>li>a:active {
@@ -272,13 +272,16 @@ nav {
 }
 
 .navbar-inverse {
-  background: #e3f2fd;
+  /* background: #5E5E5E; */
+  background-color: #3D5F88;
+  border-radius: 6px;
+  border: 0;
 }
 
 .navbar-brand {
   font-size: 2.15rem !important;
   font-weight: 500;
-  color: black !important;
+  color: white !important;
 }
 
 /* Navbar link size */
@@ -287,7 +290,7 @@ nav {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: black;
+  color: white;
 }
 
 .navbar {
