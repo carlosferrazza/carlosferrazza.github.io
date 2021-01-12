@@ -50,22 +50,22 @@
 <body>
 
   <!-- navbar include -->
-  <!-- <div w3-include-html="navbar.html"></div> -->
-  <nav class="navbar navbar-inverse">
-     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                 class="icon-bar"></span><span class="icon-bar"></span></button>
-              <a class="navbar-brand montserrat dark-blue" href="index.html">Carmelo (Carlo) Sferrazza</a>
-        </div> <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav navbar-right">
-              <li id="home"><a class="montserrat" href="index.html">Home</a></li>
-              <li id="publications"><a class="montserrat" href="publications.html">Publications</a></li>
-           </ul>
-        </div><!-- /.navbar-collapse -->
-     </div><!-- /.container-fluid -->
-  </nav>
+  <nav class="navbar navbar-default">
+      <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                  class="icon-bar"></span><span class="icon-bar"></span></button>
+               <a class="navbar-brand montserrat dark-blue" href="index.html">Carmelo (Carlo) Sferrazza</a>
+         </div> <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li id="home"><a class="montserrat" href="index.html">Home</a></li>
+               <li id="publications"><a class="montserrat" href="publications.html">Publications</a></li>
+            </ul>
+         </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+   </nav>
+  <!-- <div w3-include-html="navbar.html"></div>  -->
 
   <div class="spacer-div-3 hidden-xs hidden-xs"></div>
 
@@ -97,19 +97,28 @@
               <td><i class="fas fa-at"></i></td>
               <td><a href="mailto:csferrazza@ethz.ch">csferrazza@ethz.ch</a></td>
             </tr>
+            <tr>
+              <td><i class="ai ai-google-scholar ai-1x"></i></td>
+              <td><a href="https://scholar.google.ch/citations?user=x0_lwNYAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            </tr>
+            <tr>
+              <td><i class="fab fa-linkedin-in"></i></td>
+              <td><a href="https://www.linkedin.com/in/carmelo-carlo-sferrazza-17205482/" target="_blank">Linkedin</a></td>
+            </tr>
           </tbody>
         </table>
 
       </div>
       <div class="col-sm-8">
 
-        <p>I am a PhD student at the Institute for Dynamic Systems and Control, ETH Zurich, under the supervision of Prof. Dr. Raffaello D’Andrea.
+        <p>I am a PhD candidate at the Institute for Dynamic Systems and Control, ETH Zurich, under the supervision of Prof. Dr. Raffaello D’Andrea.
 My current research interests include the design and the development of vision-based, data-driven tactile sensors, and learning-based model predictive control.</p>
 
         <p>I received the B.Sc. degree in Automation Engineering from Politecnico di Milano in 2014 and the M.Sc. degree in Robotics, Systems and Control from ETH Zurich in 2016. During my studies, I completed a double-degree program and received the B.Eng. in Electronics and Information Engineering from the Tongji University. </p>
 
-        <p>I am a recipient of the Best Paper Award at the 2020 IEEE International Conference on Soft Robotics, and I received the ETEL Award for my master’s thesis on model predictive control of an unmanned aerial vehicle.</p>
-
+        <p>I was a recipient of the Best Paper Award at the 2020 IEEE International Conference on Soft Robotics, and I received the ETEL Award for my master’s thesis on model predictive control of an unmanned aerial vehicle.</p>
+        
+        <br>
         <!-- .read-more -->
 
 
@@ -124,23 +133,48 @@ My current research interests include the design and the development of vision-b
         <h3 class="push-down-3"><span>Select Publications</span></h3>
         <ol id="education">
           <li>
+            <div class="row d-inline-flex ">
+              <div class="col-sm-3">
+                <img class="select-img img-responsive img-thumbnail" src="img/zeroshot.jpg" alt="fem">
+              </div>
+              <div class="col-sm-9">
+                Zero-shot sim-to-real transfer of tactile control policies <br> for aggressive swing-up manipulation
+                <div class="row d-inline-flex push-down-1">
+                  <div class="col-sm-12">
+                    <p>
+                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2101.02680" target="_blank">
+                          <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       </a>
+                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2101.02680.pdf" target="_blank">
+                          <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
+                       </a>
+                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/4rG-o2Cz3-o" target="_blank">
+                          <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
             <div class="row d-inline-flex">
               <div class="col-sm-3">
                 <img class="select-img img-thumbnail" src="img/fem_sim.jpg" alt="fem">
               </div>
               <div class="col-sm-9">
-                Learning the sense of touch in simulation: <br>a sim-to-real strategy for vision-based tactile sensing
+                Sim-to-real for high-resolution optical tactile sensing: <br>From images to 3D contact force distributions
                 <div class="row d-inline-flex push-down-1">
                   <div class="col-sm-12 ">
                     <p>
-                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2003.02640" target="_blank">
-                          <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2012.11295" target="_blank">
+                          <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                        </a>
-                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2003.02640.pdf" target="_blank">
+                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2012.11295.pdf" target="_blank">
                           <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                        </a>
-                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/dDTga9PgWS0" target="_blank">
-                          <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/SyyxzROVVyY" target="_blank">
+                          <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                        </a>
                     </p>
                   </div>
@@ -155,18 +189,18 @@ My current research interests include the design and the development of vision-b
               </div>
               <div class="col-sm-9 ">
                 Towards vision-based robotic skins: <br>a data-driven, multi-camera tactile sensor
-                <div class="text-danger">&#x25cf; Winner of the best paper award &#x25cf;</div>
+                <div class="award"><b>&#x25cf; Winner of the best paper award &#x25cf;</b></div>
                 <div class="row d-inline-flex push-down-1">
                   <div class="col-sm-12">
                     <p>
                        <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9116060" target="_blank">
-                          <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                          <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                        </a>
                        <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/1910.14526.pdf" target="_blank">
                           <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                        </a>
                        <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/lbavqAlKl98" target="_blank">
-                          <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                          <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                        </a>
                     </p>
                   </div>
@@ -174,31 +208,7 @@ My current research interests include the design and the development of vision-b
               </div>
             </div>
           </li>
-          <li>
-            <div class="row d-inline-flex ">
-              <div class="col-sm-3">
-                <img class="select-img img-responsive img-thumbnail" src="img/fem.jpg" alt="fem">
-              </div>
-              <div class="col-sm-9">
-                Ground Truth Force Distribution for Learning-Based Tactile Sensing: A Finite Element Approach
-                <div class="row d-inline-flex push-down-1">
-                  <div class="col-sm-12">
-                    <p>
-                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/document/8918082" target="_blank">
-                          <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
-                       </a>
-                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/1909.04000.pdf" target="_blank">
-                          <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
-                       </a>
-                       <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/9A-cONrsiOg" target="_blank">
-                          <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
-                       </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+          
 
         </ol>
 
@@ -208,11 +218,36 @@ My current research interests include the design and the development of vision-b
   </div>
 
   <!-- Back-to-top button -->
+  <!--
   <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
-
+  -->
 
   <!-- footer include -->
-  <div w3-include-html="footer.html"></div>
+  <footer class="footer">
+      <div class="container">
+        <hr/>
+        <div class="row">
+          <div class="col-sm-6 text-muted">
+
+            <p>&#169; 2021 Carmelo Sferrazza</p>
+
+          </div>
+          
+          <div class="col-sm-6">
+
+            <!-- Social professional networking icons -->
+    <!-- 
+            <ul class="social-icons pull-right">
+              <li><a href="mailto:csferrazza@ethz.ch" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://scholar.google.ch/citations?user=x0_lwNYAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/carmelo-carlo-sferrazza-17205482/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+     -->
+          </div>
+        </div>
+      </div>
+    </footer><!-- jQuery Javascript Library -->
+  <!-- <div w3-include-html="footer.html"></div> -->
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -231,8 +266,8 @@ My current research interests include the design and the development of vision-b
 
   <script>
     $(document).ready(function() {
-      $("li#about a").addClass("active");
-      $("li#about a").addClass("hvr-bubble-bottom");
+      $("li#home a").addClass("active");
+      $("li#home a").addClass("hvr-bubble-bottom");
     });
   </script>
 

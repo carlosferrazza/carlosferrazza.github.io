@@ -50,7 +50,22 @@
 <body>
 
    <!-- navbar include -->
-   <div w3-include-html="navbar.html"></div>
+  <nav class="navbar navbar-default">
+      <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                  class="icon-bar"></span><span class="icon-bar"></span></button>
+               <a class="navbar-brand montserrat dark-blue" href="index.html">Carmelo (Carlo) Sferrazza</a>
+         </div> <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li id="home"><a class="montserrat" href="index.html">Home</a></li>
+               <li id="publications"><a class="montserrat" href="publications.html">Publications</a></li>
+            </ul>
+         </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+   </nav>
+  <!-- <div w3-include-html="navbar.html"></div>  -->
 
    <div class="spacer-div-3 hidden-xs hidden-xs"></div>
 
@@ -65,6 +80,78 @@
             <!--<h3 class="push-down-4"><span>Select Publications</span></h3>-->
 
             <ul class="publications">
+                <li>
+                 <b>Zero-shot sim-to-real transfer of tactile control policies for aggressive swing-up manipulation.</b><br>
+                 T. Bi, C. Sferrazza and R. D'Andrea.<br>
+                 <em>Preprint,</em>
+                 2020.
+                 <p>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2101.02680" target="_blank">
+                      <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                    </a>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2101.02680.pdf" target="_blank">
+                      <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
+                    </a>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/4rG-o2Cz3-o" target="_blank">
+                      <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
+                    </a>
+                </p>
+               </li>
+               
+               <li>
+                 <b>Sim-to-real for high-resolution optical tactile sensing: From images to 3D contact force distributions.</b><br>
+                 C. Sferrazza and R. D'Andrea.<br>
+                 <em>Preprint,</em>
+                 2020.
+                 <p>
+                   <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2012.11295" target="_blank">
+                      <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                   </a>
+                   <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2012.11295.pdf" target="_blank">
+                      <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
+                   </a>
+                   <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/SyyxzROVVyY" target="_blank">
+                      <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
+                   </a>
+                 </p>
+               </li>
+               
+               <li>
+                 <b>A Vision-based Sensing Approach for a Spherical Soft Robotic Arm.</b><br>
+                 M. Hofer, C. Sferrazza and R. D'Andrea.<br>
+                 <em>Frontiers in Robotics and AI (to appear),</em>
+                 2021.
+                 <p>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://www.frontiersin.org/articles/10.3389/frobt.2021.630935/abstract" target="_blank">
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                    </a>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2012.06413.pdf" target="_blank">
+                       <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
+                    </a>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/CldCKhukqqQ" target="_blank">
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
+                    </a>
+                 </p>
+               </li>
+               
+               <li>
+                 <b> Learning-based parametrized model predictive control for trajectory tracking.</b><br>
+                 C. Sferrazza, M. Muehlebach and R. D'Andrea.<br>
+                 <em>Optimal Control Applications and Methods,</em>
+                 2020.
+                 <p>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2656" target="_blank">
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                    </a>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/oca.2656" target="_blank">
+                       <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
+                    </a>
+                    <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/-E4znjVDCyA" target="_blank">
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
+                    </a>
+                 </p>
+               </li>
+            
                <li>
                  <b>Learning the sense of touch in simulation: a sim-to-real strategy for vision-based tactile sensing.</b><br>
                  C. Sferrazza, T. Bi and R. D'Andrea.<br>
@@ -72,13 +159,13 @@
                  2020.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2003.02640" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/2003.02640.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/dDTga9PgWS0" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -90,13 +177,13 @@
                  2020.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/1909.09096" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/1909.09096.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/1MJuhxVcTns" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -106,16 +193,16 @@
                  C. Trueeb, C. Sferrazza and R. D'Andrea.<br>
                  <em>Proceedings of the International Conference on Soft Robotics (RoboSoft),</em>
                  2020.
-                 <div class="text-danger">&#x25cf; Winner of the best paper award &#x25cf;</div>
+                 <div class="award">&#x25cf; Winner of the best paper award &#x25cf;</div>
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9116060" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/1910.14526.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/lbavqAlKl98" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -127,13 +214,13 @@
                  2019.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/document/8918082" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/1909.04000.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/9A-cONrsiOg" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -145,13 +232,13 @@
                  2019.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/document/8967571" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/pdf/1812.03163.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/CdYK5I6Sccw" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -163,13 +250,13 @@
                  2019.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://www.mdpi.com/1424-8220/19/4/928" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://www.mdpi.com/1424-8220/19/4/928/pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://www.mdpi.com/1424-8220/19/4/928/s1" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -181,13 +268,13 @@
                  2017.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/document/8264428" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="download/cdc2017.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/GgIwrnoNvTY" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -199,7 +286,7 @@
                  2017.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/document/7989317" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="download/icra2017.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
@@ -208,7 +295,7 @@
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Online appendix
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://youtu.be/GgIwrnoNvTY" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -220,13 +307,13 @@
                  2016.
                  <p>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="https://ieeexplore.ieee.org/document/7759536" target="_blank">
-                       <i class="far fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
+                       <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp; Link
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="download/iros2016.pdf" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Download
                     </a>
                     <a id="link-to-docs" role="button" class="btn btn-default" href="download/iros2016_video.mp4" target="_blank">
-                       <i class="far fa-play fa-fw" aria-hidden="true"></i>&nbsp; Video
+                       <i class="far fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video
                     </a>
                  </p>
                </li>
@@ -242,7 +329,31 @@
    <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
 
    <!-- footer include -->
-   <div w3-include-html="footer.html"></div>
+  <footer class="footer">
+      <div class="container">
+        <hr/>
+        <div class="row">
+          <div class="col-sm-6 text-muted">
+
+            <p>&#169; 2021 Carmelo Sferrazza</p>
+
+          </div>
+          
+          <div class="col-sm-6">
+
+            <!-- Social professional networking icons -->
+    <!-- 
+            <ul class="social-icons pull-right">
+              <li><a href="mailto:csferrazza@ethz.ch" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://scholar.google.ch/citations?user=x0_lwNYAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/carmelo-carlo-sferrazza-17205482/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+     -->
+          </div>
+        </div>
+      </div>
+    </footer><!-- jQuery Javascript Library -->
+  <!-- <div w3-include-html="footer.html"></div> -->
 
    <!-- jQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -261,8 +372,8 @@
 
    <script>
       $(document).ready(function() {
-         $("li#research a").addClass("active");
-         $("li#research a").addClass("hvr-bubble-bottom");
+         $("li#publications a").addClass("active");
+         $("li#publications a").addClass("hvr-bubble-bottom");
 
       });
    </script>
