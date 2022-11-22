@@ -16,10 +16,10 @@ $(document).ready(function() {
         $("#read-more").fadeToggle("fast");
 
         // Change the button
-        if ($("#badge-more").text() == "more") {
-           $("#badge-more").text("less");
+        if ($("#badge-more").text() == "Read more...") {
+           $("#badge-more").text("Read less ");
         } else {
-           $("#badge-more").text("more");
+           $("#badge-more").text("Read more...");
         }
 
      });
