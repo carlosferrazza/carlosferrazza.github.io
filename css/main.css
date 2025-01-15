@@ -16,6 +16,18 @@ body {
   cursor: pointer;
 }
 
+#button-more {
+  background-color: #1585cf;
+  color: white;
+  cursor: pointer;
+}
+
+#link-more {
+  background-color: #1585cf;
+  color: white;
+  cursor: pointer;
+}
+
 /* Font style */
 .montserrat {
   font-family: "Montserrat", Helvetica, sans-serif !important;

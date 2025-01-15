@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip()
   })
 
-  // Initally hide the read more div
+     // Initally hide the read more div
      $("#read-more").css("display", "none");
 
      // Show more on click
@@ -22,6 +22,30 @@ $(document).ready(function() {
            $("#badge-more").text("Read more...");
         }
 
+     });
+
+     // Initally hide the read more div
+     $("#show-more").css("display", "none");
+
+     // Show more on click
+     $("#button-more").on("click", function() {
+
+        // Show/hide the div
+        $("#show-more").fadeToggle("fast");
+
+        // Change the button
+        if ($("#button-more").text() == "Show more...") {
+           $("#button-more").text("Show less ");
+        } else {
+           $("#button-more").text("Show more...");
+        }
+
+     });
+
+     // Link to page on click
+     $("#link-more").on("click", function() {
+         // link to publications.html
+         window.location.href = "publications.html";
      });
 
      // popover function
